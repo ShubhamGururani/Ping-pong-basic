@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.player {
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 42%;
+}
+
+#top-player {
+    top: 0px;
+    background-color: blue;
+}
+
+#bottom-player {
+    bottom: 0px;
+    background-color: blueviolet;
+}
