@@ -1,7 +1,10 @@
 var player = document.getElementsByClassName('player');
 var topPlayer = document.getElementById('top-player');
 var bottomPlayer = document.getElementById('bottom-player');
-var screenWidth = window.screen.width * window.devicePixelRatio;
+// var screenWidth = window.screen.width * window.devicePixelRatio;
+// screen width was used originally, now body width used to resize game acc to browser width
+var bodyWidth = document.body.clientWidth;
+
 // on pressing any key on keyboard following arrow function is invoked
 document.addEventListener('keypress', e => {
     console.log(e.key);
@@ -15,10 +18,10 @@ document.addEventListener('keypress', e => {
         player[1].style.marginLeft = Math.max(0, (left - 10)) + "px";
     } else if (e.key == 'd' || e.key == 'D') {
         console.log('go right');
-        // screen width in px as calculated above
+
         // since 200 is the width of the player thus 200 is deducted
-        player[0].style.marginLeft = Math.min(screenWidth - 200, (left + 10)) + "px";
-        player[1].style.marginLeft = Math.min(screenWidth - 200, (left + 10)) + "px";
+        player[0].style.marginLeft = Math.min(bodyWidth - 150, (left + 10)) + "px";
+        player[1].style.marginLeft = Math.min(bodyWidth - 150, (left + 10)) + "px";
     } else {
         console.log('galat button daba ke kya sabit krna chahte ho?');
     }
