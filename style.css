@@ -8,7 +8,7 @@ body {
     height: 25px;
     position: absolute;
     border-radius: 20px;
-    margin-left: 42%;
+    margin-left: 45%;
 }
 
 #top-player {
@@ -19,4 +19,15 @@ body {
 #bottom-player {
     bottom: 0px;
     background-color: blueviolet;
+}
+
+#ball {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 50%;
+    /*margin-left: 45%;*/
+    left: 50%;
+    position: absolute;
+    top: 50%;
 }
