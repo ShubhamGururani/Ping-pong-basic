@@ -20,17 +20,17 @@ document.addEventListener('keypress', e => {
         started = true;
     }
 
-    if (e.key == 'a' || e.key == 'A') {
+    if (started && (e.key == 'a' || e.key == 'A')) {
         // console.log('go left');
         // math.max is used so the margin left does not go in negative thus player always stays on screen
-        player[0].style.marginLeft = Math.max(0, (left - 10)) + "px";
-        player[1].style.marginLeft = Math.max(0, (left - 10)) + "px";
-    } else if (e.key == 'd' || e.key == 'D') {
+        player[0].style.marginLeft = Math.max(0, (left - 15)) + "px";
+        player[1].style.marginLeft = Math.max(0, (left - 15)) + "px";
+    } else if (started && (e.key == 'd' || e.key == 'D')) {
         // console.log('go right');
 
         // since 200 is the width of the player thus 200 is deducted
-        player[0].style.marginLeft = Math.min(bodyWidth - 150, (left + 10)) + "px";
-        player[1].style.marginLeft = Math.min(bodyWidth - 150, (left + 10)) + "px";
+        player[0].style.marginLeft = Math.min(bodyWidth - 150, (left + 15)) + "px";
+        player[1].style.marginLeft = Math.min(bodyWidth - 150, (left + 15)) + "px";
     } 
 });
 

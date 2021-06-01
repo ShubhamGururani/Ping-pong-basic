@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 .player {
@@ -9,6 +10,8 @@ body {
     position: absolute;
     border-radius: 20px;
     margin-left: 45%;
+    border: 2px solid black;
+    text-align: center;
 }
 
 #top-player {
@@ -25,6 +28,7 @@ body {
     height: 30px;
     width: 30px;
     background-color: red;
+    border: 1px solid black;
     border-radius: 50%;
     /*margin-left: 45%;*/
     left: 50%;
